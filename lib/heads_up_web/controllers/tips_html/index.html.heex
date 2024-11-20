@@ -1,0 +1,11 @@
+<div class="tips">
+  <ol>
+    <%= for tip <- @tips do %>
+      <li>
+        <a href={~p"/tips/#{tip.id}"}>
+          <%= tip.text %>
+        </a>
+      </li>
+    <% end %>
+  </ol>
+</div>
